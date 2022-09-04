@@ -5,14 +5,14 @@ katze `[ˈkatsə]` (German for "cat") is a simple, lightweight, and fast testing
 
 # Installation
 
-katze is not available on PyPI yet, so you'll have to install it manually.
+katze is available on PyPI
 
 For *nix systems
 ```bash
-pip install git+https://github.com/teaishealthy/katze
+pip install katze
 ```
 
 For Windows
 ```bash
-py -m pip install git+hhttps://github.com/teaishealthy/katze
+py -m pip install katze
 ```
