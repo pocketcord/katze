@@ -2,7 +2,7 @@
 name = "aiohttp"
 version = "3.8.1"
 description = "Async http client/server framework (asyncio)"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -22,7 +22,7 @@ speedups = ["aiodns", "brotli", "cchardet"]
 name = "aiosignal"
 version = "1.2.0"
 description = "aiosignal: a list of registered asynchronous callbacks"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -33,7 +33,7 @@ frozenlist = ">=1.1.0"
 name = "async-timeout"
 version = "4.0.2"
 description = "Timeout context manager for asyncio programs"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -41,7 +41,7 @@ python-versions = ">=3.6"
 name = "attrs"
 version = "22.1.0"
 description = "Classes Without Boilerplate"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -76,7 +76,7 @@ uvloop = ["uvloop (>=0.15.2)"]
 name = "charset-normalizer"
 version = "2.1.1"
 description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.0"
 
@@ -106,7 +106,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "discatpy"
 version = "0.1.0"
 description = "A high level, asynchronous Discord API wrapper made completely from scratch."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.8"
 develop = false
@@ -117,7 +117,7 @@ discord-typings = "0.5.1"
 
 [package.source]
 type = "git"
-url = "https://github.com/EmreTech/DisCatPy.git"
+url = "https://github.com/emretech/discatpy"
 reference = "api-refactor"
 resolved_reference = "129eed28423326d1538b015f95d20e989f1516c1"
 
@@ -125,7 +125,7 @@ resolved_reference = "129eed28423326d1538b015f95d20e989f1516c1"
 name = "discord-typings"
 version = "0.5.1"
 description = "Maintained typings of payloads that Discord sends"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -136,7 +136,7 @@ typing_extensions = ">=4.3,<5"
 name = "frozenlist"
 version = "1.3.1"
 description = "A list-like structure which implements collections.abc.MutableSequence"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -144,7 +144,7 @@ python-versions = ">=3.7"
 name = "idna"
 version = "3.3"
 description = "Internationalized Domain Names in Applications (IDNA)"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -166,7 +166,7 @@ plugins = ["setuptools"]
 name = "multidict"
 version = "6.0.2"
 description = "multidict implementation"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -210,7 +210,7 @@ python-versions = ">=3.7"
 name = "typing-extensions"
 version = "4.3.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -218,7 +218,7 @@ python-versions = ">=3.7"
 name = "yarl"
 version = "1.8.1"
 description = "Yet another URL library"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -229,7 +229,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "1d853127e862ed3e1403aaa6102728db041a5c35a89c0cf7d1293a2c7007ba9e"
+content-hash = "fefaaa058aa982eb31edf435292bcf9d7f55352625e427e5a1a8067d9c7d82d5"
 
 [metadata.files]
 aiohttp = [
