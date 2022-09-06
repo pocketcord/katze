@@ -12,13 +12,13 @@ class FakeWebsocketMessage:
         if isinstance(data, str):
             self.data = data
         else:
-            self.data = json.dumps(data)
+            self.data: Any = json.dumps(data)
 
 
 class FakeWebsocket:
     def __init__(self, loop: AbstractEventLoop):
         self.closed = False
-        self.state = State(0, 1)
+        self.state: State = State(0, 1)
         self.token: str | None = None
         self._ready = Event()
         loop.create_task(self.__init_task())
@@ -27,10 +27,10 @@ class FakeWebsocket:
         self.queue: Queue[FakeWebsocketMessage | str] = Queue()
         self._ready.set()
 
-    async def close(self, *, code: Any):
-        self.closed = True
+    async def close(self, *, code: Any) -> None:
+        self.closed: bool = True
 
-    async def send_json(self, data: Any):
+    async def send_json(self, data: Any) -> None:
         if data["op"] == 2:
             user = User(self.state)
             guild = Guild(self.state)
@@ -51,5 +51,8 @@ class FakeWebsocket:
                     )
                 )
 
-    async def receive(self):
-        return await self.queue.get()
+    async def receive(self) -> FakeWebsocketMessage:
+        while True:
+            message = await self.queue.get()
+            if isinstance(message, FakeWebsocketMessage):
+                return message

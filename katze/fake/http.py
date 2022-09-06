@@ -10,7 +10,7 @@ class FakeMixedHttpClient(HTTPClient):
     def __init__(self, token: str, *, api_version: int | None = None) -> None:
         super().__init__(token, api_version=api_version)
 
-    async def ws_connect(self, url: str):  # type: ignore
+    async def ws_connect(self, url: str) -> FakeWebsocket:  # type: ignore
         ws = FakeWebsocket(get_running_loop())
         await ws._ready.wait()
         await ws.queue.put(

@@ -6,7 +6,12 @@ authors = ["teaishealthy <teaishealthy@protonmail.com>"]
 license = "MIT"
 
 [tool.pyright]
+include = ["katze"]
+typeCheckingMode = "strict"
+
+useLibraryCodeForTypes = true
 reportPrivateUsage = false
+reportMissingTypeStubs = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -14,7 +19,9 @@ python = "^3.10"
 [tool.poetry.dev-dependencies]
 black = "^22.8.0"
 isort = "^5.10.1"
+pyright = "^1.1.269"
 discatpy = {git = "https://github.com/emretech/discatpy", rev = "api-refactor"}
+disfake = {git = "https://github.com/teaishealthy/disfake.git", rev = "main"}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
